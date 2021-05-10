@@ -1,0 +1,34 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.4",
+    "heartbeatAt": "2021-04-29T18:05:29.891402",
+    "startedAt": "2021-04-29T18:05:04.177605",
+    "docker": null,
+    "gpu": "GeForce MX150",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--ip=127.0.0.1",
+        "--stdin=9003",
+        "--control=9001",
+        "--hb=9000",
+        "--Session.signature_scheme=\"hmac-sha256\"",
+        "--Session.key=b\"4eab1211-83e4-4f2d-bf13-6c53f7e8c580\"",
+        "--shell=9002",
+        "--transport=\"tcp\"",
+        "--iopub=9004",
+        "--f=C:\\Users\\manu-\\AppData\\Local\\Temp\\tmp-2812IMQ4vKZgsOJa.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/manucastilla/search_engine.git",
+        "commit": "a4d7de482c9fa0e8f20ad4e82d0aa0859487afca"
+    },
+    "email": "manuela.castilla@gmail.com",
+    "root": "C:/Users/manu-/Documents/INSPER/7_semestre/processamento_linguagem/search_engine",
+    "host": "DESKTOP-U5DSIPV",
+    "username": "manu-",
+    "executable": "C:\\Users\\manu-\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+}

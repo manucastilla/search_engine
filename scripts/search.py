@@ -4,6 +4,7 @@ from argparse import ArgumentParser
 from se.archive import load_archive
 from se.index import load_index
 from se.search import search
+from se.normalization import limpa_tudo
 
 
 MSG_DESCRIPTION = 'Busca.'
@@ -19,11 +20,17 @@ def main():
     docs = load_archive(args.filename_docs)
     index = load_index(args.filename_index)
 
-    docs_searched = search(' '.join(args.query), index, docs)
+    query_limpa = list(map(limpa_tudo, args.query))
+
+    query = " ".join(query_limpa)
+    docs_searched = search(query, index, docs)
 
     for doc in docs_searched:
         print(" ".join(doc))
         print('=' * 80)
+
+    if len(docs_searched) == 0:
+        print("Esta palavra não existe no conjunto de tweets")
 
 
 if __name__ == '__main__':

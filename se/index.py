@@ -1,5 +1,5 @@
 import json
-
+from se.normalization import limpa_tudo
 from collections import defaultdict
 
 
@@ -8,6 +8,7 @@ def make_index(docs):
     for k, doc in enumerate(docs):
         words = set(doc)
         for word in words:
+            word = limpa_tudo(word)
             index[word].append(k)
     return index
 

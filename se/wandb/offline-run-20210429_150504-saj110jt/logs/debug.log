@@ -1,0 +1,33 @@
+2021-04-29 15:05:04,207 INFO    MainThread:21220 [wandb_setup.py:_flush():69] setting env: {}
+2021-04-29 15:05:04,208 INFO    MainThread:21220 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-04-29 15:05:04,208 INFO    MainThread:21220 [wandb_setup.py:_flush():69] setting login settings: {'mode': 'offline'}
+2021-04-29 15:05:04,209 INFO    MainThread:21220 [wandb_init.py:_log_setup():336] Logging user logs to c:\Users\manu-\Documents\INSPER\7_semestre\processamento_linguagem\search_engine\se\wandb\offline-run-20210429_150504-saj110jt\logs\debug.log
+2021-04-29 15:05:04,211 INFO    MainThread:21220 [wandb_init.py:_log_setup():337] Logging internal logs to c:\Users\manu-\Documents\INSPER\7_semestre\processamento_linguagem\search_engine\se\wandb\offline-run-20210429_150504-saj110jt\logs\debug-internal.log
+2021-04-29 15:05:04,214 INFO    MainThread:21220 [wandb_init.py:_jupyter_setup():287] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000012A57A36C10>
+2021-04-29 15:05:04,216 INFO    MainThread:21220 [wandb_init.py:init():369] calling init triggers
+2021-04-29 15:05:04,216 INFO    MainThread:21220 [wandb_init.py:init():374] wandb.init called with sweep_config: {}
+config: {}
+2021-04-29 15:05:04,217 INFO    MainThread:21220 [wandb_init.py:init():418] starting backend
+2021-04-29 15:05:04,217 INFO    MainThread:21220 [backend.py:_multiprocessing_setup():69] multiprocessing start_methods=spawn, using: spawn
+2021-04-29 15:05:04,266 INFO    MainThread:21220 [backend.py:ensure_launched():123] starting backend process...
+2021-04-29 15:05:04,513 INFO    MainThread:21220 [backend.py:ensure_launched():127] started backend process with pid: 4384
+2021-04-29 15:05:04,514 INFO    MainThread:21220 [wandb_init.py:init():423] backend started and connected
+2021-04-29 15:05:04,685 INFO    MainThread:21220 [wandb_init.py:init():465] updated telemetry
+2021-04-29 15:05:04,688 INFO    MainThread:21220 [wandb_init.py:init():522] starting run threads in backend
+2021-04-29 15:05:09,694 WARNING MainThread:21220 [wandb_init.py:init():764] interrupted
+Traceback (most recent call last):
+  File "C:\Users\manu-\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\sdk\wandb_init.py", line 744, in init
+    run = wi.init()
+  File "C:\Users\manu-\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\sdk\wandb_init.py", line 525, in init
+    _ = backend.interface.communicate_run_start(run_obj)
+  File "C:\Users\manu-\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\sdk\interface\interface.py", line 798, in communicate_run_start
+    result = self._communicate(rec)
+  File "C:\Users\manu-\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\sdk\interface\interface.py", line 537, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "C:\Users\manu-\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\sdk\interface\interface.py", line 82, in get
+    is_set = self._object_ready.wait(timeout)
+  File "C:\Users\manu-\AppData\Local\Programs\Python\Python38\lib\threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "C:\Users\manu-\AppData\Local\Programs\Python\Python38\lib\threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
