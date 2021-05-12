@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# python scripts/search.py data/bolsonaro_tweets.json data/index.json
 from argparse import ArgumentParser
 
 from se.archive import load_archive
