@@ -23,7 +23,8 @@ def main():
 
     query_limpa = list(map(limpa_tudo, args.query))
 
-    query = " ".join(query_limpa)
+    query = " ".join(args.query)
+    print(query)
     docs_searched = search(query, index, docs)
 
     for doc in docs_searched:
