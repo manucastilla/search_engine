@@ -1,5 +1,7 @@
 # Uma máquina de busca para fins didáticos.
 
+### Nicolas Stegmann e Manuela Castilla
+
 ## Instruções
 
 - Faça um *fork* deste repositório para poder receber atualizações eventuais. Para saber como fazer um *fork*, veja https://docs.github.com/en/github/getting-started-with-github/fork-a-repo.
